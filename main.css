@@ -1,0 +1,8 @@
+body{
+    display: grid;
+    grid-area: 
+    "side-bar top-bar top-bar top-bar",
+    "side-bar main main main ";
+    grid-template-columns: .8fr 1fr 1fr;
+    grid-template-rows: 5rem 1fr 1fr 1fr;
+}
