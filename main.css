@@ -1,8 +1,30 @@
+/* :root {
+
+} */
+
+
 body{
+    height: 100vw;
+    width: 100vw;
     display: grid;
     grid-area: 
     "side-bar top-bar top-bar top-bar",
-    "side-bar main main main ";
-    grid-template-columns: .8fr 1fr 1fr;
-    grid-template-rows: 5rem 1fr 1fr 1fr;
+    "side-bar main-content main-content main-content ";
+    grid-template-columns: 5rem 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 4fr;
+}
+.side-bar{
+    grid-area: side-bar;
+    height: 100vh;
+    width: 5rem;
+    background-color: rgb(96, 115, 161);
+    position: fixed;
+    overflow: hidden;
+}
+.top-bar {
+    grid-area: top-bar;
+}
+
+.main-content {
+    grid-area: main-content;
 }
