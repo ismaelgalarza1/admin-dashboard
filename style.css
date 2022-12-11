@@ -1,0 +1,63 @@
+:root{
+    --drawer-bg-color: #4869a9;
+    --font-topDrawer: 22px; 
+    --font-color: white;
+    --nav-color: rgba(206, 206, 206, 0.372);
+}
+
+body{
+    height:100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: 
+    "side-drawer nav nav nav"
+    "side-drawer content content content";
+    grid-template-rows: .8fr 1fr;
+    grid-template-columns: 10rem 1fr 1fr 1fr;
+}
+.side-drawer{
+    grid-area: side-drawer;
+    background-color: var(--drawer-bg-color);
+}
+.menuItems{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    color: var(--font-color);
+    padding-top: 1.5rem;
+}
+.side-drawer > div:not(:first-child){
+    padding-left: 1.5rem;
+}
+
+.topdrawer{
+    padding-left: .5rem;
+    font-size: 1.5em;
+}
+
+.nav {
+    grid-area: nav;
+    height: 20vh;
+    background-color: var(--nav-color);
+    border-bottom: 1px solid var(--nav-color);
+    justify-items: flex-start;
+    box-shadow: -4px 10px 14px -14px rgba(0, 0, 0, 0.75);
+}
+.top-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.search > input{
+    border-radius: 25px;
+    width: 30vw;
+    border: none;
+}
+
+.content{
+    grid-area: content;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+}
