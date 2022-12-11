@@ -3,6 +3,9 @@
     --font-topDrawer: 22px; 
     --font-color: white;
     --nav-color: rgba(206, 206, 206, 0.372);
+    --icons-color: white;
+    --search-bg: rgb(224, 221, 221);
+    --btn-color: #5c85d8;
 }
 
 body{
@@ -13,8 +16,9 @@ body{
     "side-drawer nav nav nav"
     "side-drawer content content content";
     grid-template-rows: .8fr 1fr;
-    grid-template-columns: 10rem 1fr 1fr 1fr;
+    grid-template-columns: 15rem 1fr 1fr 1fr;
 }
+
 .side-drawer{
     grid-area: side-drawer;
     background-color: var(--drawer-bg-color);
@@ -48,10 +52,18 @@ body{
     flex-direction: row;
     align-items: center;
 }
+.search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 8rem;
+}
 .search > input{
     border-radius: 25px;
+    height: 3vh;
     width: 30vw;
     border: none;
+    background-color: var(--search-bg);
 }
 
 .content{
@@ -60,4 +72,55 @@ body{
 .profile{
     display: flex;
     flex-direction: column;
+}
+.profileView{
+    display: flex;
+    flex-direction: row;
+    align-items:  center;
+    gap: 1rem;
+    padding-left: 10rem;
+}
+.profilePic{
+    height: 2rem ;
+    border-radius: 100%;
+}
+.bell{
+    padding-left: 2rem
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 5rem ;
+    padding-top: 2rem;
+}
+.bottom-nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.bottomPic{
+    height: 4rem;
+    border-radius: 100%;
+}
+.greeting {
+    font-size:  15px;
+}
+.name{
+    font-size: 25px;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-left: 16rem;
+}
+.new, .upload, .share {
+    background-color: var(--btn-color);
+    color: var(--font-color);
+    border-radius: 25px;
+    width: 5vw;
+    height: 4vh;
+    border: none;
 }
