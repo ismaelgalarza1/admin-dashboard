@@ -18,10 +18,15 @@ body{
     grid-template-rows: .8fr 1fr;
     grid-template-columns: 15rem 1fr 1fr 1fr;
 }
+hr{
+    border:  solid black;
+    width: 12vw;
+}
 
 .side-drawer{
     grid-area: side-drawer;
     background-color: var(--drawer-bg-color);
+    
 }
 .menuItems{
     display: flex;
@@ -29,6 +34,7 @@ body{
     gap: .5rem;
     color: var(--font-color);
     padding-top: 1.5rem;
+    padding-bottom: 12px;
 }
 .side-drawer > div:not(:first-child){
     padding-left: 1.5rem;
