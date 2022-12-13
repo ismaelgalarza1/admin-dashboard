@@ -38,6 +38,7 @@ hr{
 }
 .side-drawer > div:not(:first-child){
     padding-left: 1.5rem;
+    cursor: pointer;
 
 }
 .topdrawer{
@@ -71,8 +72,6 @@ hr{
     border: none;
     background-color: var(--search-bg);
 }
-
-
 .profileView{
     display: flex;
     flex-direction: row;
@@ -115,6 +114,9 @@ hr{
     flex-direction: row;
     gap: 1rem;
     padding-left: 16rem;
+}
+.buttons > button:hover{
+    box-shadow: -4px 10px 14px -14px rgba(0, 0, 0, 0.75);
 }
 .new, .upload, .share {
     background-color: var(--btn-color);
@@ -164,4 +166,12 @@ hr{
     border: none;
     border-radius: 30px;
     background-color: var(--search-bg);
+}
+.cards:hover{
+    box-shadow: -4px 10px 14px -14px rgba(0, 0, 0, 3);
+    cursor: pointer;
+}
+.row-two{
+    display: flex;
+    flex-direction: row;
 }
