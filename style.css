@@ -15,12 +15,13 @@ body{
     grid-template-areas: 
     "side-drawer nav nav nav"
     "side-drawer content content content";
-    grid-template-rows: .8fr 1fr;
+    grid-template-rows: .4fr 1fr;
     grid-template-columns: 15rem 1fr 1fr 1fr;
 }
 hr{
     border:  solid black;
     width: 12vw;
+    
 }
 
 .side-drawer{
@@ -37,8 +38,8 @@ hr{
 }
 .side-drawer > div:not(:first-child){
     padding-left: 1.5rem;
-}
 
+}
 .topdrawer{
     padding-left: .5rem;
     font-size: 1.5em;
@@ -71,13 +72,7 @@ hr{
     background-color: var(--search-bg);
 }
 
-.content{
-    grid-area: content;
-}
-.profile{
-    display: flex;
-    flex-direction: column;
-}
+
 .profileView{
     display: flex;
     flex-direction: row;
@@ -135,13 +130,38 @@ hr{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
     
 }
-/* .social-icons{
+.social-icons{
     display: flex;
     flex-direction: row;
     gap: 1rem;
     padding-top: 15px;
-    justify-items: center;
     
-} */
+}
+#social {
+    padding-top: 2rem;
+}
+/*style for the content of the dashboard*/
+.content {
+    grid-area: content;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 2rem;
+    padding-left:2rem;
+}
+.content > h5{
+    font-size: 1.5rem;
+    padding-left: 1.5rem;
+}
+.cards{
+    padding: 4rem;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--search-bg);
+}
